@@ -1,4 +1,4 @@
-package nivell1.Exercici1.modulos;
+package nivell1.Exercici1.Main;
 
 public class Book {
 
