@@ -1,6 +1,7 @@
 package nivell1.Exercici1.Main;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 import java.util.Comparator;
 
@@ -13,7 +14,6 @@ public class Library {
         this.books = books;
     }
 
-
     public void addBook(String title, String author, int publicationYear) {
         for (Book book : books) {
             if (book.getTittle().equalsIgnoreCase(title)) {
@@ -25,12 +25,6 @@ public class Library {
 
         books.sort(Comparator.comparing(Book::getTittle, String.CASE_INSENSITIVE_ORDER));
     }
-
-
-    public ArrayList<Book> getBooks() {
-        return books;
-    }
-
 
     public void getBookByIndex() {
 
@@ -65,5 +59,10 @@ public class Library {
         if (!found) {
             System.out.println("Sorry, the book '" + title + "' is not in the list.");
         }
+    }
+
+
+    public Collection<Object> getBooks() {
+        return null;
     }
 }

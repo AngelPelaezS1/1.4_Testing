@@ -1,5 +1,6 @@
-package nivell1.Exercici3;
+package nivell1.Exercici3.Test;
 
+import nivell1.Exercici3.ArrayException;
 import org.testng.annotations.Test;
 
 public class ArrayTest {

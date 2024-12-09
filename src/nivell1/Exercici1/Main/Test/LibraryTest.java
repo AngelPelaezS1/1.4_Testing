@@ -1,9 +1,12 @@
-package nivell1.Exercici1.Main;
+package nivell1.Exercici1.Main.Test;
 
+import nivell1.Exercici1.Main.Book;
+import nivell1.Exercici1.Main.Library;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -70,7 +73,7 @@ public class LibraryTest {
         library.addBook("A Book", "Author 2", 2021);
         library.addBook("M Book", "Author 3", 2022);
 
-        ArrayList<Book> sortedBooks = library.getBooks();
+        Collection<Object> sortedBooks = library.getBooks();
         assertEquals("A Book", sortedBooks.get(0).getTittle(), "The first book should be A Book.");
         assertEquals("M Book", sortedBooks.get(1).getTittle(), "The second book should be M Book.");
         assertEquals("Z Book", sortedBooks.get(2).getTittle(), "The third book should be Z Book.");
